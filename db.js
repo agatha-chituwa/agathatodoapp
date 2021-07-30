@@ -12,8 +12,8 @@ require("dotenv").config();
 const connectionString= process.env.DATABASE_URL
 
 const pool = new Pool({connectionString,
-  ssl: { rejectUnauthorized: true }
-
+  ssl: { rejectUnauthorized: false }
+//https://agathatodoapp.herokuapp.com/
 });
 
 module.exports = pool;
